@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Title }from "./components/Title/Title";
 import {Main} from "./components/Main/Main";
-
+import {Title }from "./components/Title/Title";
 
 
 import './App.css';
@@ -15,7 +14,6 @@ function App() {
   useEffect(() => {
     loadPokemonsList(firstPageURL);
   }, []);
-
 
   async function fetchAll(list) {
     try {
@@ -33,7 +31,6 @@ function App() {
     const response = await fetch(url);
     const data = await response.json();
     const list = data.results;
-    console.log("results", list)
     const detailedList = await fetchAll(list);
     setPokemonsList([...pokemonsList, ...detailedList]);
     setNextPageUrl(data.next)

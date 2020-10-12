@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const TitleBox = styled.div`
   height: 70px;
   display: flex;
