@@ -1,14 +1,12 @@
 import React from 'react';
-import {TitleBackground, TitleBox} from "./style";
+import {TitleBorder, TitleBox} from "./style";
 
 export function Title() {
   return (
-  
    <TitleBox>
-    <TitleBackground>
+     <TitleBorder>
       <h2>Pokedex</h2>
-    </TitleBackground>
+      </TitleBorder>
     </TitleBox>
-   
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Row} from "./style";
-import {PokemonsBox} from "../PokemonsBox/PokemonsBox";
-import {DetailsBox} from "../DetailsBox/DetailsBox";
+import {PokemonsList} from "../PokemonsList/PokemonsList";
+import {PokemonDetails} from "../PokemonDetails/PokemonDetails";
 
 export function Main (props) {
   let [currentElement, setCurrentElement] = useState();
@@ -9,9 +9,9 @@ export function Main (props) {
   //console.log(">>>>>>>>>>>>", currentElement)
   return (
     <Row>
-      <PokemonsBox list={props.list} onLoadMore={props.onLoadMore} isLoaded={props.isLoaded} 
+      <PokemonsList list={props.list} onLoadMore={props.onLoadMore} isLoaded={props.isLoaded} 
          onCurrentElementClick={(el) => setCurrentElement(el)}/>
-      <DetailsBox element={currentElement}/>
+      <PokemonDetails element={currentElement}/>
     </Row>
   )
 }
