@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 \# Clone repository 
 
 ```
-git clone https://github.com/irynahotsiy/Chat_Sample.git
+https://github.com/irynahotsiy/Pokedex.git
 ```
 
 \# Install dependencies
