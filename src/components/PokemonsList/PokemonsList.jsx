@@ -12,7 +12,7 @@ export function PokemonsList(props) {
       {getSplitedArray(props.list).map((array) => 
         <WrappedContainer key={array[0].id}>
           {array.map((el) => 
-             <Item key={el.id} el={el} elementDetails={props.elementDetails} onCurrentElementClick={props.onCurrentElementClick}/>
+             <Item key={el.id} el={el} onCurrentElementClick={props.onCurrentElementClick}/>
           )}
         </WrappedContainer>
       )}
