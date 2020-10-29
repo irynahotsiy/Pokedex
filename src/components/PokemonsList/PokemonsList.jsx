@@ -4,8 +4,8 @@ import {Container, WrappedContainer, Column} from "./style";
 import {Button} from "../Button/Button";
 import {getSplitedArray} from "../../helpers";
 
-
 export function PokemonsList(props) {
+  
   return (
     <Container>
      <Column>

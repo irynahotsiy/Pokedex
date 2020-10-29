@@ -2,6 +2,7 @@ import React from 'react';
 import {TitleBorder, TitleBox} from "./style";
 
 export function Title() {
+  
   return (
    <TitleBox>
      <TitleBorder>

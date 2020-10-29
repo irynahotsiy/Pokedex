@@ -5,6 +5,7 @@ import {Type} from "../../../helpers.style";
 
 export function Item(props) {
   const {name, types, sprites} = props.el;
+  
   return (
     <ElContainer onClick={() => props.onCurrentElementClick(props.el)}>
         <ImageContainer >
@@ -15,8 +16,6 @@ export function Item(props) {
           {types.map(type =>
             <Type key={type.slot} type={type.type.name} >{capitalize(type.type.name)}</Type> )}
         </TypesContainer>
-     
-      
     </ElContainer>
   )
 }
